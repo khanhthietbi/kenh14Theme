@@ -1,0 +1,1472 @@
+﻿/*scroller*/
+.osc-scroller {
+    overflow: hidden;
+    position: relative;
+}
+
+.osc-scroller .osc-content {
+    position: relative;
+}
+
+.osc-scroller > .track {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2px;
+}
+
+.osc-scroller > .track .thumb {
+    background: #000;
+    width: 5px;
+    position: relative;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+    filter: alpha(opacity=25);
+    -moz-opacity: 0.25;
+    -khtml-opacity: 0.25;
+    opacity: 0.25;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.osc-scroller > .track .thumb:hover {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.50;
+    -khtml-opacity: 0.50;
+    opacity: 0.50;
+}
+
+.dis-sel {
+    -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;
+}
+
+.osc-scroller-dis-sel{-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
+/*End Scroller*/
+
+
+.VID-taskbar a {
+    text-decoration: none;
+}
+
+.VID-taskbar img {
+    border: none;
+}
+
+.VID-ico {
+    background: transparent url('../../images_taskbar/sprites.png') no-repeat scroll left top;
+}
+.VID-fl {
+    float: left;
+}
+.VID-toTop {
+    display: block;
+}
+.VID-content_tab {
+    display: none;
+}
+.VID-taskbar {
+    font-family: "lucida grande",tahoma;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #333;
+    margin: 0;
+    word-wrap: break-word;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    background: url("../../images_taskbar/bg/bg-taskbar.png") repeat-x 0 0 #EBEBEB ;
+    overflow: visible !important;
+    list-style-type: none;
+    padding: 1px 0 0;
+    border-left: 1px solid #B5B5B5;
+    height: 38px;
+    z-index: 99999;
+    text-align: justify;
+}
+
+.VID-taskbar > li {
+    float: left;
+    /*    position: relative;*/
+    border-right: 1px solid #B5B5B5;
+    border-left: 1px solid white;
+    display: block;
+    height: 38px;
+}
+
+.VID-taskbar li.VID-text-vietid {
+    width: 160px;
+}
+
+.VID-taskbar li.VID-ico-vietid {
+    width: 43px;
+}
+
+.VID-taskbar li.VID-ico-vietid img.VID-taskbar-ico {
+    padding: 10px 12px;
+}
+
+.VID-taskbar li.VID-text-vietid .VID-text {
+    padding: 10px 9px;
+    display: block;
+    color: #444444;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.VID-taskbar li.VID-text-vietid .VID-text img.VID-taskbar-text-ico {
+    vertical-align: -3px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+li.VID-text-vietid:hover , li.VID-ico-vietid:hover , ul.VID-taskbar > li:hover{
+    background: url("../../images_taskbar/bg/bg-taskbar-hover.png") repeat-x center center transparent;
+    cursor: pointer;
+}
+
+li.VID-text-vietid:hover .VID-text.VID-frm-login.VID-show {
+    color: #444;
+}
+
+ul.VID-list-notify li:hover {
+    background: #F4F6F9;
+}
+
+.VID-data-notify .VID-author a.VID-bold:hover {
+    color: #105CB6;
+}
+
+.VID-link-notify .VID-link:hover {
+    text-decoration: underline;
+}
+
+/*register*/
+.VID-form {
+    z-index: 9999;
+    display: block;
+    text-align: left;
+    position: absolute;
+    bottom: 42px;
+    right: 0px;
+    background: white;
+    width: 350px;
+    border: 2px solid #818181;
+    font-weight: lighter;
+}
+
+.VID-taskbar .VID-form span.VID-rs {
+    border-bottom: 1px solid #c3c3c3;
+    padding: 10px 9px;
+    background: #EEE;
+    margin: 0;
+    color: #333333;
+    font-size: 14px;
+    display: block;
+    position: relative;
+}
+.VID-clear { clear:both;}
+.VID-bold {
+    font-weight: bold;
+}
+
+.VID-green {
+    color: #105cb6;
+}
+
+.VID-gray {
+    color: #cacaca;
+}
+
+.VID-gray-frm {
+    color: #808080;
+}
+
+.VID-red {
+    color: #ff0000;
+}
+
+.VID-space-dot {
+    color: #898989;
+}
+
+.VID-taskbar .VID-form .VID-img-header-menu-regisrer {
+    vertical-align: -5px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.VID-taskbar .VID-form .VID-close-ico-frm {
+    position: absolute;
+    top: 14px;
+    right: 9px;
+    cursor: pointer;
+    display: block;
+    height: 14px;
+    width: 14px;
+}
+
+.VID-taskbar .VID-form .VID-close-ico-frm .VID-img-close {
+    background: url("../../images_taskbar/close.png") center center transparent;
+    width: 14px;
+    height: 14px;
+}
+
+.VID-taskbar .VID-form .VID-close-ico-frm:hover .VID-img-close {
+    background: url("../../images_taskbar/close-hover.png") center center transparent;
+    width: 14px;
+    height: 14px;
+}
+
+.VID-form .VID-content-menu {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 9px;
+    display: block;
+}
+
+.VID-taskbar li .VID-form {
+    cursor: default;
+}
+
+.VID-content-menu .VID-header-register {
+    display: block;
+    border-bottom: 1px solid #dbdbdb;
+    height: 45px;
+    font-size: 15px;
+}
+
+.VID-content-menu .VID-header-register .VID-img-header-register {
+    position: absolute;
+    top: 0;
+    right: -12px;
+    z-index: 9999;
+}
+
+.VID-register-tab-one {
+    background: #fff;
+    color: #333333;
+    width: 50%;
+    float: left;
+    height: 45px;
+    position: relative;
+}
+
+.VID-register-tab-two {
+    background: #eeeeee;
+    color: #333333;
+    width: 50%;
+    display: inline-block;
+    height: 45px;
+}
+
+.VID-header-register .VID-text {
+    font-size: 15px;
+    color: #333;
+    margin: 13px 0;
+    display: inline-block;
+}
+
+.VID-header-register .VID-taskbar-text-ico {
+    vertical-align: -2px;
+    margin-left: 9px;
+    margin-right:  3px;
+    display: inline-block;
+}
+
+.VID-header-register .VID-register-tab-two .VID-text {
+    margin-left: 28px;
+	white-space: nowrap;
+}
+
+.VID-content-menu .VID-frm-content {
+    background: #f5f5f5;
+    display: block;
+    padding: 1px 9px 12px 6px;
+}
+
+.VID-text-email {
+    display: inline-block;
+    font-size: 12px;
+    color: #444444;
+    float: left;
+    margin-top: 8px;
+	width:70px;
+	white-space: nowrap;
+}
+
+.VID-input-email {
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 12px;
+}
+
+.VID-fb-email .VID-input-email {
+    width: 90%;
+    color: #808080;
+    font-size: 12px;
+}
+
+.VID-input.VID-fb-email {
+    background: #eeeeee;
+}
+
+.VID-fb-email-ico {
+    vertical-align: -4px;
+}
+
+.VID-input {
+    border: 1px solid #a0a0a0;
+    border-radius: 2px;
+    background: #fff;
+    padding: 5px;
+    margin-left: 98px;
+}
+
+
+
+.VID-rules {
+    font-size: 12px;
+    color: #333333;
+    margin: 11px 3px;
+}
+
+.VID-check-border {
+    margin: 0;
+    padding: 0;
+    vertical-align: -2px;
+}
+
+.VID-register-button {
+    display: inline-block;
+    border: 1px solid #3b5998;
+    border-radius: 2px;
+    background: #6d84b4;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    width: 78px;
+    height: 23px;
+    margin-right: 1px;
+}
+
+.VID-register-button .VID-text {
+    padding: 2px 13px;
+    display: block;
+}
+
+.VID-g-button .VID-green {
+    font-size: 11px;
+}
+
+.VID-g-button .VID-gray {
+    /*    margin: 0 -2px 0 -1px;*/
+}
+
+.VID-g-button {
+    margin-left: 98px;
+    margin-right: -20px;
+}
+
+.VID-other-register .VID-text {
+    color: #333333;
+    font-size: 13px;
+    display: inline-block;
+	white-space: nowrap;
+}
+
+.VID-other-register {
+    margin: 20px 9px;
+}
+
+.VID-fb , .VID-google {
+    float: right;
+}
+
+.VID-fb {
+    margin-right: 8px;
+    margin-top: -3px;
+}
+
+.VID-form.VID-frm-success {
+    /*    right: 400px;*/
+    min-height: 370px;
+}
+
+.VID-form.VID-frm-success .VID-register-tab-one {
+    background: #EEE;
+    color: #333;
+    width: 50%;
+    height: 45px;
+    position: relative;
+    float: left;
+}
+
+.VID-form.VID-frm-success .VID-register-tab-two { 
+    background: white;
+    color: #333;
+    display: inline-block;
+    width: 50%;
+    height: 45px;
+}
+
+/*.VID-form.VID-frm-success .VID-content .VID-header-register .VID-img-header-register {
+    right: -6px;
+}*/
+
+.VID-frm-content .VID-text-success {
+    font-size: 12px;
+    font-weight: bold;
+    color: #146e02;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    display: block;
+}
+
+.VID-text-success-line-first {
+    font-size: 12px;
+    color: #333333;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.VID-text-success-line-first:last-child {
+    margin-bottom: 0;
+}
+
+/*login*/
+.VID-confirm {
+    font-size: 12px;
+    color: #333;
+    margin-left: 78px;
+    margin-bottom: 8px;
+}
+
+.VID-form.VID-form-login .VID-input {
+    margin-left: 78px;
+}
+
+.VID-form.VID-form-login .VID-g-button {
+    margin-left: 78px;
+}
+
+.VID-form.VID-form-login .VID-register-button {
+    width: 80px;
+}
+
+.VID-form.VID-form-login .VID-register-button .VID-text-register {
+    padding: 2px 0px 0 7px;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    display: block;
+}
+
+.VID-g-button .VID-gray {
+    margin: 0 -2px 0 -2px;
+}
+
+.VID-form.VID-form-login .VID-other-register {
+    margin: 15px 9px 20px;
+    overflow: hidden;
+}
+
+.VID-register-now {
+    display: inline-block;
+    /*    float: right;*/
+    margin-left: 8px;
+    width: 140px;
+    height: 30px;
+    background: url("../../images_taskbar/bg/bg-register-now.png") repeat-x center center transparent;
+    border: 1px solid #ab0000;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #333;
+    color: #fff;
+}
+
+.VID-register-now span {
+    margin: 5px 0 0 25px;
+    display: block;
+}
+
+.VID-form.VID-form-login .VID-other-register .VID-text {
+	white-space: nowrap;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 7px;
+    padding: 0;
+    display: inline-block;
+}
+
+.VID-taskbar .VID-form.VID-form-login span.VID-rs {
+    border-bottom: none;
+}
+
+.VID-msg-register {
+    background: #fffbe2;
+    border-top: 1px solid #e2c822;
+    border-bottom: 1px solid #e2c822;
+    padding: 8px 12px;
+    color: #444;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.VID-register-now:hover {
+    background: url("../../images_taskbar/bg/bg-register-now-hover.png") repeat-x center center transparent;
+}
+
+.VID-register-button:hover {
+    background: #5e74a7;
+}
+
+/*notify*/
+.VID-taskbar.VID-taskbar-login > li {
+    width: 43px;
+}
+
+.VID-taskbar.VID-taskbar-login > li img.VID-taskbar-ico-setting {
+    opacity: 0.4;
+}
+
+.VID-taskbar.VID-taskbar-login > li img.VID-taskbar-ico-msg {
+    opacity: 0.45;
+}
+
+.VID-taskbar.VID-taskbar-login > li img.VID-taskbar-ico-notification {
+    opacity: 0.8;
+}
+
+.VID-taskbar.VID-taskbar-login > li img.VID-taskbar-ico {
+    opacity: 0.7;
+}
+
+.VID-item-setting {
+    display: block;
+    margin: 8px 10px;
+}
+
+.VID-item-msg {
+    display: block;
+    margin: 8px 10px;
+}
+
+.VID-item-notification {
+    display: block;
+    height: 38px;
+    padding: 8px 10px;
+    position: relative;
+    width: 40px;
+}
+
+.VID-item-taskbar {
+    display: block;
+    margin: 8px 12px;
+}
+
+.VID-group-notify {
+    position: absolute;
+    top: -7px;
+    left: 23px;
+}
+
+.VID-notify-left {
+    background: url("../../images_taskbar/bg/notify-left.png") no-repeat center center;
+    height: 18px;
+    width: 2px;
+    float: left;
+}
+
+.VID-notify-content {
+    background: url("../../images_taskbar/bg/notify-bg.png") repeat-x center center;
+    height: 18px;
+    min-width: 15px;
+    float: left;
+    color: white;
+    font-size: 12px;
+}
+
+.VID-notify-right {
+    background: url("../../images_taskbar/bg/notify-right.png") no-repeat center center;
+    height: 18px;
+    width: 2px;
+    float: left;
+}
+
+.VID-notify-point {
+    background: url("../../images_taskbar/bg/notify-point.png") repeat-x center center;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    left: 28px;
+    z-index: 9999;
+}
+
+.VID-notify-total {
+    display: block;
+    margin: -1px 2px;
+}
+
+.VID-action li.VID-text-vietid {
+    background: #fff;
+}
+
+.VID-action li.VID-text-vietid .VID-text.VID-frm-login:hover  {
+    color: #444;
+}
+
+.VID-taskbar.VID-taskbar-login > li.VID-action {
+    background: #fff;
+}
+
+.VID-taskbar.VID-taskbar-login > li.VID-action img.VID-taskbar-ico-setting {
+    opacity: 0.7;
+}
+.VID-taskbar.VID-taskbar-login > li.VID-action img.VID-taskbar-ico-msg {
+    opacity: 1;
+}
+.VID-taskbar.VID-taskbar-login > li.VID-action img.VID-taskbar-ico-notification {
+    opacity: 1;
+}
+
+
+.VID-form.VID-form-notify {
+    right: 0;
+    display: none;
+}
+
+.VID-action .VID-form.VID-form-notify {
+    display: block;
+}
+
+.VID-taskbar .VID-form.VID-form-notify span.VID-rs {
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+    padding: 6px 9px 4px 11px;
+}
+
+.VID-taskbar .VID-form.VID-form-notify span.VID-rs .VID-taskbar-text-ico {
+    display: inline-block;
+    vertical-align: -4px;
+    margin-right: 3px;
+}
+
+.VID-taskbar .VID-form.VID-form-notify .VID-close-ico-frm {
+    top: 8px;
+}
+
+.VID-content-notify ul {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+    color: #444444;
+    max-height: 406px;
+}
+
+.VID-content-notify ul li {
+    padding: 10px 9px 6px 9px;
+    border-bottom: 1px solid #e9e9e9;
+    overflow: hidden;
+}
+
+.VID-avatar {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    float: left;
+}
+
+.VID-avatar img {
+    width: 28px;
+}
+
+.VID-data-notify {
+    margin-left: 37px;
+    padding-right: 16px;
+}
+
+.VID-data-notify .VID-author {
+    display: block;
+    margin: -4px 0 4px 0;
+    line-height: 17px;
+}
+
+.VID-data-notify .VID-author a.VID-bold {
+    color: #444;
+}
+
+.VID-link-notify {
+    display: block;
+    font-size: 11px;
+    line-height: 16px;  
+}
+
+.VID-link-notify .VID-link {
+    color: #105cb6;
+}
+
+.VID-link-notify .VID-channel , .VID-link-notify .VID-date-time {
+    color: #898989;
+}
+
+.VID-link-notify .VID-space-dot {
+    vertical-align: -1px;
+}
+
+li.VID-bg-space {
+    background: #f4f6f9;
+}
+
+.VID-taskbar li.VID-text-vietid .VID-text.VID-text-orther-register {
+    padding: 0;
+    display: inline-block;
+}
+
+.VID-other-register .VID-fb {
+    margin-right: 0;
+    display: inline-block;
+    float: none;
+    vertical-align: -8px;
+    margin-left: 8px;
+}
+
+.VID-register-button .VID-text-register {
+    margin: 2px 13px;
+    display: block;
+}
+
+.VID-taskbar li.VID-text-vietid .VID-text.VID-text-head-login {
+    padding: 0;
+    display: inline-block;
+}
+
+.VID-text-register.VID-text-register-login {
+    margin: 0;
+}
+
+.VID-taskbar li.VID-text-vietid .VID-text.VID-text-head-login.VID-text-done {
+    color: #a2a2a2;
+}
+
+.VID-header-register .VID-taskbar-text-ico.VID-taskbar-text-ico-done {
+    opacity: 0.VID-5;
+}
+
+.VID-gray-rs {
+    font-size: 12px;
+    color: #999;
+    margin-left: 4px;
+}
+
+a.VID-green:hover {
+    text-decoration: underline;
+}
+
+.VID-form {
+    display: none;
+}
+
+.VID-action .VID-form {
+    display: block;
+}
+
+/*edit*/
+
+.VID-email {
+    display: block;
+    margin: 10px 0;
+    font-weight: lighter;
+}
+
+.VID-red img {
+    vertical-align: 2px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+.VID-input {
+    border: 1px solid #a0a0a0;
+    border-radius: 2px;
+    background: #fff;
+    padding: 5px;
+    margin-left: 98px;
+    height: 20px;
+}
+
+.VID-input-email {
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 12px;
+    height: 17px;
+    padding: 1px 0px;
+    margin: 0em;
+}
+.VID-g-button .VID-green {
+    font-size: 11px;
+    margin: 0 2px;
+}
+
+.VID-form.VID-form-login .VID-other-register .VID-text {
+	white-space: nowrap;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 7px;
+    padding: 0;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+.VID-form-msg {
+    width:256px;
+    padding-bottom: 10px;
+}
+.VID-form-msg .VID-friend-online {
+    background: #fff;
+    display: block;
+    font-family: tahoma;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc {
+    padding:8px;
+    display: block;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-avatar {
+    float: left;
+    margin-right: 8px;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-avatar img {
+    width: 28px;
+    height: 28px;
+}
+.VID-form-msg .VID-friend-online .VID-is_online {
+    width:8px; height: 7px;
+    background-position: left top;
+    vertical-align: 1px;
+    margin-right: 1px;
+}
+.VID-form-msg .VID-friend-online  .VID-is_offline {
+    width:8px; height: 7px;
+    background-position: left -9px;
+    vertical-align: 1px;
+    margin-right: 1px;
+    opacity: 0.4;
+}
+.VID-form-msg .VID-friend-online  .VID-is_phone {
+    width:8px; height: 12px;
+    background-position: -8px top;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc>div {
+    margin-right: 5px;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-name {
+    font-weight: bold;
+    color: #444;
+    font-size: 11px;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action {
+    color: #999;
+    font-weight: normal;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action>div {
+    float: left;
+    display: inline;
+    font-size: 11px;
+    margin-top: 1px;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action .VID-dropdown {
+    position: relative;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action .VID-dropdown .VID-ico-dropdown{
+    width: 15px;
+    height: 15px;
+    background-position: left -16px;
+    cursor: pointer;
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-dropdown .VID-ico-dropdown.VID-show-menu{
+    background-position: -16px -16px;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action .VID-online-status {
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 22px;
+    right: 0;
+    width: 124px;
+    height: 74px;
+    border-top: 1px #333 solid;
+    border-right: 1px #333 solid;
+    border-bottom: 2px #333 solid;
+    border-left: 1px #333 solid;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action .VID-online-status a {
+    display: block;
+    color: #333;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 2px 8px;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action .VID-online-status a img {
+    vertical-align: middle;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action .VID-online-status a.VID-active {
+    font-weight: bold;
+}
+.VID-form-msg .VID-friend-online .VID-my-acc .VID-my-action .VID-online-status a.VID-logout {
+    border-top:1px #aeaeae solid;
+    padding-left: 21px;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab {
+    border-top:1px #d1d1d1 solid;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li {
+    display: block;
+    float: left;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li:first-child {
+    border-right: 1px #dddddd solid;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li:last-child {
+    width:112px;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li a {
+    font-weight: bold;
+    font-size: 11px;
+    color: #444;
+    display: block;
+    border-top:1px #fff solid;
+    border-right:1px #fff solid;
+    padding: 5px 8px 7px;
+    height: 18px;
+    width: 110px;
+    background: #f4f4f4;
+    border-bottom: 1px #d1d1d1 solid;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li:last-child a {
+    width: 111px;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li a:hover, .VID-form-msg .VID-friend-online .VID-msg-tab li a.VID-active {
+    background: #fff;
+
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li a.VID-active {
+    border-bottom: 1px #fff solid;
+}
+
+.VID-form-msg .VID-friend-online .VID-msg-tab li a img {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    display: block;
+    vertical-align: middle;
+    float: left;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li a img.VID-recent {
+    margin-top: 1px;
+    background-position: left -32px;
+}
+.VID-form-msg .VID-friend-online .VID-msg-tab li a img.VID-friend {
+    background-position: left -48px;
+    margin-top: 3px;
+}
+.VID-form-msg .VID-friend-online .VID-msg-list {
+    background: #fff;
+}
+.VID-form-msg .VID-friend-online .VID-msg-list .VID-search-form {
+    padding: 9px 8px 0;
+}
+.VID-form-msg .VID-friend-online .VID-msg-list .VID-search-form .VID-s-input {
+    background: #fff url('../../images_taskbar/ico/search-icon.gif') no-repeat scroll 9px 8px;
+    border:1px #d1d1d1 solid;
+    border-radius: 2px;
+    color: #808080;
+    font-size: 11px;
+    padding: 7px 7px 7px 24px;
+    outline:none;
+    width: 206px;
+}
+.VID-form-msg .VID-friend-online .VID-msg-list .VID-search-form .VID-s-input:focus {
+    background: #fff url('../../images_taskbar/ico/search-icon-hover.gif') no-repeat scroll 9px 8px;
+    color: #333;
+    border:1px #a5a5a5 solid;
+}
+.VID-title-border {
+    background: transparent url('../../images_taskbar/bg/bg-border-df.gif') repeat-x scroll left center;
+    padding-left: 8px;
+    display: block;
+}
+.VID-title-border .VID-title-bar {
+    padding: 8px;
+    background: #fff;
+    color: #999;
+    font-weight: bold;
+    font-size: 11px;
+    float: left;
+}
+.VID-form-msg .VID-friend-online .VID-list-items {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li {
+    display: block;
+    padding: 2px 8px;
+}
+.VID-form-msg .VID-friend-online .VID-msg-items li {
+    padding: 6px 8px;
+    border-top: 1px #ededed solid;
+    margin-bottom: 1px;
+}
+.VID-form-msg .VID-friend-online .VID-msg-items li:first-child {
+    border: none;
+    padding-top: 0;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li .VID-avatar {
+    float: left;
+    margin-right: 7px;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li .VID-avatar img {
+    width:28px;
+    height: 28px;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li .VID-cont-text {
+    margin-left: 35px;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li .VID-user-online {
+    color: #444;
+    font-size: 11px;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li a.VID-disabled {
+    color: #999;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li:hover {
+    background: #f4f6f9;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li .VID-cont-text .VID-item-info {
+    line-height: 14px;
+    display: block;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li .VID-cont-text .VID-item-info a {
+    font-weight: bold;
+    font-size: 11px;
+    float: left;
+    color: #444;
+    line-height: 14px;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li .VID-cont-text .VID-item-info span {
+    float: right;
+    color: #aeaeae;
+    line-height: 14px;
+    font-size: 11px;
+}
+.VID-form-msg .VID-friend-online .VID-list-items li .VID-cont-text .VID-pm-cont {
+    color: #959595;
+    font-size: 11px;
+    float: left;
+    display: block;
+    line-height: 14px;
+    padding-left: 13px;
+}
+
+.VID-msg-window {
+    position: absolute; 
+    bottom: 0;
+    right: 300px;
+    height: 344px;
+    width: auto;
+    padding: 0 9px;
+    display: none;
+    width:800px; /* ManhTienpt: Thay Ä‘á»•i thá»‘ng sá»‘ nÃ y khi insert 1 box má»›i */ 
+}
+.VID-msg-window .VID-msg-box-chat {
+    height: 342px;
+    width: 260px;
+    float: right;
+    margin: 0 9px;
+    border: 1px #808080 solid;
+    background: #fff;
+    display: none;
+}
+.VID-msg-window .VID-msg-box-chat .VID-title-bar {
+    background: #eee;
+    padding: 7px 6px;
+    border-bottom: 1px #c3c3c3 solid;
+    position: relative;
+}
+.VID-msg-window .VID-msg-box-chat .VID-title-bar a.VID-close {
+    float: right;
+    background: url("../../images_taskbar/close.png") center center transparent;
+    width: 14px;
+    height: 14px;
+}
+.VID-msg-window .VID-msg-box-chat .VID-title-bar a:hover.VID-close {
+    background: url("../../images_taskbar/close-hover.png") center center transparent;
+}
+.VID-msg-window .VID-msg-box-chat .VID-title-bar a.VID-invite {
+    background-position:  left -80px;
+    color: #578cca;
+    padding-left: 17px;
+    float: right;
+    display: block;
+    font-size: 11px;
+    line-height: 12px;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+.VID-msg-window .VID-msg-box-chat .VID-title-bar a.VID-invite.VID-disabled {
+    background-position:  left -96px;
+    color: #999;
+}
+.VID-msg-window .VID-msg-box-chat .VID-title-bar .VID-box-title {
+    color: #333;
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 25px;
+    float: left;
+    max-width: 125px;
+    line-height: 15px;
+}
+.VID-msg-window .VID-msg-box-chat .VID-title-bar .VID-only-one {
+    background-position: left -64px;
+}
+.VID-msg-window .VID-msg-box-chat .VID-title-bar .VID-group-chat {
+    background-position: left -112px;
+}
+.VID-msg-window .VID-msg-box-chat ul.VID-list-chat {
+    height: 278px;
+    overflow-y: scroll;
+    vertical-align: bottom;
+    padding:5px;
+}
+.VID-msg-window .VID-msg-box-chat ul.VID-list-chat li {
+    display: block;
+    padding: 7px 0;
+    border-top: 1px #e9e9e9 solid;
+    cursor: default;
+}
+.VID-msg-window .VID-msg-box-chat ul.VID-list-chat li:first-child {
+    border: none;
+}
+.VID-msg-window .VID-msg-box-chat ul.VID-list-chat li.VID-date {
+    color: #999;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 5px;
+}
+.VID-msg-window .VID-msg-box-chat ul.VID-list-chat li .VID-avatar {
+    float: left;
+}
+.VID-msg-window .VID-msg-box-chat ul.VID-list-chat li .VID-avatar img {
+    width: 28px;
+    height: 28px;
+    margin-top: 5px;
+}
+.VID-msg-window .VID-msg-box-chat .VID-chat-content {
+    margin-left: 38px;
+    line-height: 14px;
+    color: #333;
+    font-size: 11px;
+}
+.VID-msg-window .VID-msg-box-chat .VID-form-chat {
+    padding: 3px 5px 5px;
+    border-top: 1px #c9d0da solid;
+}
+.VID-msg-window .VID-msg-box-chat .VID-input-chat {
+    border: none;
+    font-size: 11px;
+    line-height: 11px;
+    color: #333;
+    outline: none;
+    width: 210px;
+    float: left;
+    padding: 2px 0;
+}
+.VID-msg-window .VID-msg-box-chat a.VID-emoticon-insert {
+    float: right;
+    margin-left: 5px;
+}
+.VID-msg-window .VID-msg-box-chat a.VID-emoticon-insert img {
+    width:14px;
+    height: 14px;
+    background-position: left -128px;
+}
+.VID-msg-window .VID-msg-box-chat a:hover.VID-emoticon-insert img {
+    background-position: left -144px;
+}
+.VID-msg-window .VID-msg-box-chat .VID-search-friend-invite {
+    padding: 3px 5px;
+    background: #f2f2f2;
+    border-bottom: 1px #c3c3c3 solid;
+    position: absolute;
+    width: 250px;
+    top:30px;
+    left: 0;
+    display: none;
+}
+.VID-msg-window .VID-msg-box-chat .VID-search-friend-invite input[type="text"] {
+    border:1px #cacaca solid;
+    padding:4px 6px 3px;
+    width:182px;
+    font-size: 11px;
+    color: #808080;
+    outline: none;
+}
+.VID-msg-window .VID-msg-box-chat .VID-search-friend-invite input[type="text"]:focus {
+    border-color: #a5a5a5;
+    color: #333;
+}
+.VID-msg-window .VID-msg-box-chat .VID-search-friend-invite input[type="submit"] {
+    background: transparent url('../../images_taskbar/bg/bg-search-invite.gif') repeat-x scroll left top;
+    border: 1px #535353 solid;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    height: 22px;
+    width: 50px;
+    cursor: pointer;
+}
+
+/* ManhTienpt: Friend search */ 
+.VID-friend-search:after{display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.VID-friend-search{
+    position: relative;
+    border:1px #cacaca solid;
+    padding:2px 2px 0;
+    width:190px;
+    font-size: 11px;
+    color: #808080;
+    background: #fff;
+    margin-right: 4px;
+    float: left;
+}
+.VID-friend-search input {border: 0;display: inline-block;outline: none;float: left;padding: 0;margin: 0 0 2px 0;}
+.VID-friend-search .VID-result{position: absolute; left: 0; background: #b0aeb1; width: 100%; display: none; max-width: 200px; min-width: 125px;z-index: 99999}
+.VID-friend-search .VID-result > .VID-wrap {border: 1px solid #666666; background: #fff; position: relative; top: -2px; left: -2px}
+.VID-friend-search .VID-result > .VID-wrap > div {max-height: 250px}
+.VID-friend-search .VID-result > .VID-wrap > div > div.VID-content {width: 100%}
+.VID-friend-search .VID-result .VID-item{padding: 5px 10px; margin: 0; overflow: hidden; cursor: pointer}
+.VID-friend-search .VID-result .VID-item .VID-left{float: left; width: 30px}
+.VID-friend-search .VID-result .VID-item .VID-right{margin-left: 35px; text-align: left; float: none}
+.VID-friend-search .VID-result .VID-item .VID-username {font-weight: bold; color: #830000;}
+.VID-friend-search .VID-result .VID-item.VID-active, .VID-friend-search .VID-result .VID-item:hover{background: #f0f0f0; color: #c00000;}
+.VID-friend-search .VID-added-item-wrap {display: inline-block; color: #838383; font-size: 11px; margin-right: 3px; float: left; margin-bottom: 2px; }
+.VID-friend-search .VID-added-item {float: left; border: 1px solid #dbdbdb; background-color: #f7f7f7; height: 14px; line-height: 14px; padding: 0 7px; color: #838383; font-size: 11px}
+.VID-friend-search .VID-added-item .VID-close-ico {background: url('../../images_taskbar/sprites.png') -16px top no-repeat; margin-left: 8px; cursor: pointer; width: 7px; height: 7px}
+.VID-friend-search .VID-added-item .VID-close-ico:hover {background: url('../../images_taskbar/sprites.png') -25px top no-repeat}
+
+.VID-scrolltop {
+    display: none;
+    width: 46px;
+    height: 46px;
+    position: fixed;
+    background: url(../images/toTop.png) 0 0 no-repeat;
+    cursor: pointer;
+    top: 50%;
+    right: 10px;
+    -ms-filter: "alpha(opacity=50)";
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 999;
+}
+
+.VID-scrolltop span {
+    display: none;
+}
+
+.VID-scrolltop:hover {
+    -ms-filter: "alpha(opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+
+/*new setting*/
+.VID-form.VID-form-setting {
+    width: 354px;
+}
+
+.VID-ava-setting {
+    width: 100%;
+    padding: 11px 10px;
+
+}
+
+.VID-ava-setting .VID-ava {
+    float: left;
+    width: 36px;
+}
+
+.VID-ava-setting .VID-ava img {
+    width: 36px;
+}
+
+.VID-info {
+    margin-left: 50px;
+    margin-top: -4px;
+}
+
+.VID-info .VID-nameacc {
+    color: #105cb6;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.VID-info .VID-nameacc:hover {
+    text-decoration: underline;
+}
+
+.VID-info .VID-ava-edit {
+    color: #578cca;
+    font-size: 11px;
+    font-weight: lighter;
+    display: block;
+    cursor: pointer;
+}
+
+.VID-info .VID-ava-edit:hover {
+    text-decoration: underline;
+}
+
+.VID-info .VID-ava-edit .VID-ico.VID-ava-ico-edit {
+    background-position: left -159px;
+    width: 19px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: -4px;
+    margin-right: 5px;
+}
+
+.VID-tab-info {
+    font-weight: bold;
+    font-size: 11px;
+    color: #999999;
+    padding: 4px 10px;
+    border-top: 1px solid #e1e1e1;
+    background: #f0f0f0;
+    height: 18px;
+}
+
+.VID-txt-edit {
+    float: right;
+    color: #578cca;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.VID-txt-edit:hover {
+    text-decoration: underline;
+}
+
+.VID-ico.VID-ico-edit {
+    background-position: -21px -163px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: -1px;
+    margin-right: 4px;
+}
+
+.VID-name-info , .VID-gender-info , .VID-birth-info , .VID-state-info {
+    font-size: 11px;
+    color: #333333;
+}
+
+.VID-ico.VID-name-info-ico {
+    background-position: left -176px;
+    width: 10px;
+    height: 9px;
+    display: inline-block;
+    vertical-align: 0px;
+    margin-right: 9px;
+}
+
+.VID-ico.VID-gender-info-ico {
+    background-position: left -186px;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: 0px;
+    margin-right: 11px;
+}
+
+.VID-ico.VID-birth-info-ico {
+    background-position: left -194px;
+    width: 9px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: 0px;
+    margin-right: 10px;
+}
+
+.VID-ico.VID-state-info-ico {
+    background-position: left -203px;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    vertical-align: 0px;
+    margin-right: 10px;
+}
+
+.VID-content-info {
+    padding: 6px 10px 7px;
+    border-bottom: 1px solid #e4e4e4;
+    box-shadow: inset 0px -1px 0px #cacaca;
+}
+
+.VID-ico.VID-txt-logout-info-ico {
+    background-position: left -213px;
+    width: 12px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: -3px;
+    margin-right: 5px;
+    opacity: 0.5;
+}
+
+.VID-txt-logout-info {
+    float: right;
+    font-size: 11px;
+    color: #959595;
+    margin: 6px 10px;
+    cursor: pointer;
+}
+
+.VID-txt-logout-info:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.VID-txt-logout-info:hover .VID-ico.VID-txt-logout-info-ico {
+    opacity: 1;
+}
+
+.VID-logout-info {
+
+}
+
+#retMess{margin-left: 6px; font-size: 12px; }
+
+#Vid_Nonotify{margin: 5px}

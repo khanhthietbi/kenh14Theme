@@ -1,0 +1,35 @@
+﻿.menuwrapper,.extratop,.mostwatch,.subheader,.scrolltopgradient,.searchbuttoncontainer{background-image:url(../../skin/default/bg.gif); background-repeat: repeat-x}
+.logo,.login,.searchbox,.poweredbygoogle,.menu .active,.menu .active span,.menusep,.menu a:hover,.menu span:hover,.anchor,.hotlist-bullet,.contactadv,.featurewrappertop,.hotfocus .header,.userbar,.sharemessageicon{background-image:url(../../skin/default/sprites.png)}
+.featurewrapper{border:solid 1px #f1a60d;background-color:#ffd737;}
+.mainfeature .title a,.extraleft .title a,.extracenter .title a,.extraright title a,.otherfeature .item .title a,.scrolltopcenter .item .title a,.listnews .item .postcontent .title a,.mainfeature .catname,.readmore a,.scrolltopleft .title a,.scrolltopright .header,.submenu a,.focus-center-bottom .news-item a:hover,.hotfocus .item .title a:hover,.relatenews li a:hover,.postwrapper .title,.postwrapper .author,.breadcrumb,.breadcrumbitem{color:#bb3914;}
+.mainfeature{border-right:solid 1px #f1a60d}
+.pagercontainer .currentpage,.pagercontainer a:hover{color:#bb3914!important;border:solid 1px #fcc801;background-color:#fcc801}
+.catsep,.contentsep {border:solid 1px #f1ad1e;background-color:#fbc701}
+.searchinputcontainer,.searchbuttoncontainer{border:solid 1px #eea616;}
+.readmore{float:right;padding-right:12px;background: url('../../skin/viewmore.gif') no-repeat 100% 5px;margin-top:10px}
+.logo{background:url('../../skin/24_12_2012/header_home.png') no-repeat;width:203px;height:100px;margin-left:9px;}
+
+.logo a{display:block;width:100px;height:100px}
+.headerwrapper{background:url('../../skin/24_12_2012/header_home.png') repeat-x 0 -100px;height:100px}
+/* Fix wrong placement */
+.menuwrapper {background-position: 0 -968px !important}
+.breadcrumb{font:500 12px/18px Arial}
+/*ThanhDT add for box search*/
+.box-search{border:#ffbb4f solid 1px;border-radius:2px;}
+/*AnhDP: css event Be Style Be Stylist
+.headerwrapper{background:url('../../skin/24_12_2012/header_event.png') repeat-x 0 -100px;height:100px}
+.logo{background:url('../../skin/24_12_2012/header_event.png') no-repeat;width:100px;height:100px;margin-left:9px;}
+.event_stylist{float: left;width: 122px;height: 70px;margin-top: 15px;margin-left: 20px;}
+.event_stylist .row .header1, .event_stylist .row .header2{width: 100%;float: left;color: #fff;font-family: Time New Roman;text-decoration: none;}
+.event_stylist .row .header1{font-weight: bold;font-size: 12px;}
+.event_stylist .row .header2{font-weight: normal;font-style: italic;font-size: 22px;}
+.event_stylist .row .btnReg {color: #fff;border: 1px #fff solid;padding: 0px 10px 0px 10px;margin-top: 8px;float: left;font-family: Arial;font-size: 9px;text-decoration: none;margin-left: 5px;width: 92px;text-align: center;}
+.event_stylist .row .btnReg:hover{ background: #fff;color: #222;}
+.box-search{border:#000 solid 1px;}
+.box-mobile-download a span {background: url(../../skin/mobile-download/k14-down-sprite.png) no-repeat;background-position: 0 -147px;}
+.box-mobile-download a:hover span {background-position: -227px -279px;}
+.logo{background:url('../../skin/24_12_2012/header_event.png') no-repeat;width:100px;height:100px;margin-left:9px;}
+.headerwrapper{background:url('../../skin/24_12_2012/header_event.png') repeat-x 0 -100px;height:100px}*/
+
+
+
